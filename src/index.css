@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    font-family: 'Hammersmith One', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --dark-grey: #202225;
+    --grey-2: #464a50;
+    --red-2: #f58a97;
+    --grey: #C4C4C4;
+    --red: #eb5569;
+}
+
+html, 
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.markdown-code {
+    background-color: rgb(47, 49, 54, 0.75);
+    font-family: monospace;
+    color: #d6d2ce;
+}
+
+.markdown-link-red {
+    color: var(--red);
+    cursor: pointer;
+}

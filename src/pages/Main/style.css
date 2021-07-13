@@ -1,0 +1,155 @@
+.page-Main {
+    background: rgb(32,34,37);
+    background: linear-gradient(180deg, rgba(32,34,37,1) 14%, rgba(39,41,45,1) 35%, rgba(70,74,80,1) 100%);
+}
+
+/* Home */
+
+.page-Main-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.page-Main-home-countdown {
+    margin: 100px 50px 50px 50px;
+}
+
+.page-Main-home-charts {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.page-Main-home-chart {
+    margin: 50px 50px 50px 50px;
+}
+
+/* Stats */
+
+.page-Main-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.page-Main-stats-stat {
+    margin: 50px 50px 50px 50px;
+}
+
+/* Map */
+
+.page-Main-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.page-Main-map-map {
+    margin: 50px 0 50px 0;
+}
+
+/* Vaccin */
+
+.page-Main-vaccin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-Main-vaccin-cotaniner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+
+.page-Main-vaccin-img {
+    width: 30%;
+}
+
+.page-Main-vaccin-informations {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 15px;
+    width: 70%;
+}
+
+.page-Main-vaccin-text {
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.page-Main-vaccin-button {
+    margin-top: 15px;
+}
+
+/* Aide */
+
+.page-Main-aide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.page-Main-aide-cotaniner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    flex-flow: column nowrap;
+}
+
+.page-Main-aide-img {
+    width: 30%;
+}
+
+.page-Main-aide-text {
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.page-Main-aide-button {
+    margin-top: 15px;
+}
+
+/* When vaccin container flex is transformed from row to column*/
+@media (max-width: 900px) {
+    .page-Main-vaccin-cotaniner {
+        flex-flow: column nowrap;
+    }
+    .page-Main-vaccin-img {
+        width: 50%;
+    }
+    .page-Main-vaccin-informations {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+}
+
+/* When charts flex is transformed from row to column*/
+@media (max-width: 1100px) {
+    .page-Main-home-chart {
+        margin: 50px 0 50px 0;
+    }
+}
+
+/* Fonts-size being to big for the screen size so we reduce it*/
+@media (max-width: 500px) {
+    .page-Main-aide-text,
+    .page-Main-vaccin-text {
+        font-size: 1em;
+    }
+}

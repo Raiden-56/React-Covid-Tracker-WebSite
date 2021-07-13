@@ -1,0 +1,23 @@
+.Page404 {
+    background: rgb(32,34,37);
+    background: linear-gradient(180deg, rgba(32,34,37,1) 14%, rgba(39,41,45,1) 35%, rgba(70,74,80,1) 100%);
+}
+
+.Page404-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Page404-text {
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.Page404-logo {
+    width: 200px;
+    margin-top: 15px;
+}
