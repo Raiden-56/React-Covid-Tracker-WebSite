@@ -1,0 +1,53 @@
+.component-Countdown-container {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.component-Countdown-title {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.component-Countdown-li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.component-Countdown-li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+    .component-Countdown-title {
+        font-size: 1.5rem;
+    }
+
+    .component-Countdown-li {
+        font-size: 1.125rem;
+        padding: .75rem;
+    }
+
+    .component-Countdown-li span {
+        font-size: 3.375rem;
+    }
+}
+
+/* Removing second countdown*/
+@media (max-width: 410px) {
+    .component-Countdown-li-seconds {
+        display: none;
+    }
+}
+
+/* Removing minutes countdown*/
+@media (max-width: 300px) {
+    .component-Countdown-li-minutes {
+        display: none;
+    }
+}

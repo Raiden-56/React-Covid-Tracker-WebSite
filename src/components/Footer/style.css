@@ -1,0 +1,72 @@
+.component-Footer {
+    background-color: white;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: 0.125s;
+}
+
+.component-Footer-item {
+    margin: 0px 15px 0px 15px;
+}
+
+.component-Footer-title {
+    color: #404244;
+    margin: 0px 15px 0px 15px;
+    cursor: pointer;
+}
+
+.component-Footer-copyright {
+    color: #404244;
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.125s;
+}
+
+.component-Footer-sosciaLMedias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: row nowrap;
+}
+
+.component-Footer-sosciaLMedia {
+    cursor: pointer;
+    margin: 0px 10px 0px 10px;
+    color: #404244;
+}
+
+.component-Footer-about {
+    display: none;
+    height: 100%;
+    color: #404244;
+    cursor: pointer;
+}
+
+/* 700px */
+
+/* Removing "component-Footer-copyright" to prevent colision */
+@media (max-width: 750px) {
+    .component-Footer-copyright {
+        display: none;
+    }
+}
+
+/* Removing "component-Footer-sosciaLMedias" adn replacing it with a small about icons to prevent colision */
+@media (max-width: 750px) {
+    .component-Footer-sosciaLMedias {
+        display: none;
+    }
+    .component-Footer-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
