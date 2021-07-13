@@ -1,0 +1,107 @@
+.component-Map {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.component-Map-title {
+    display: none;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 2em;
+    width: 90%;
+}
+
+.component-Map-cotainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.component-Map-map {
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 15px ;
+}
+
+.component-Map-map path {
+    cursor: pointer;
+}
+
+.component-Map-map .active {
+    fill: var(--red);
+}
+
+.component-Map-map path:hover {
+    fill: var(--red);
+}
+
+.component-Map-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: 100%;
+    margin-left: 15px ;
+}
+
+.component-Map-country {
+    font-size: 3em;
+    color: var(--red);
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.component-Map-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: row wrap;
+}
+
+.component-Map-text-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 15px;
+}
+
+.component-Map-text {
+    color: white;
+    font-size: 1.75em;
+}
+
+/* When charts flex is transformed from row to column*/
+@media (max-width: 900px) {
+    .component-Map-cotainer {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .component-Map-map {
+        width: 100%;
+        margin: 0;
+    }
+    .component-Map-stats {
+        margin: 0;
+    }
+    .component-Map-country {
+        margin: 15px 0 15px 0;
+    }
+    .component-Map-title {
+        display: block;
+    }
+}
